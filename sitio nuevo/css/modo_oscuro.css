@@ -1,0 +1,95 @@
+.switchDark{
+	background-color: gold;
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: space-between;
+}
+.switchDark span{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	color: #fff;
+	background: none;
+}
+.switchDark::after{
+	display: block;
+	background: #fffbf5;
+	width: 1.8rem;
+	height: 1.8rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: unset;
+	border-radius: 50%;
+	transition: all .5s ease;
+	box-shadow: 0 0 1.5px 1.5px rgba(0,0,0,0.5);
+	content: "";
+}
+.switchDark.active{
+	background: blue;
+}
+.switchDark.active::after{
+	left: unset;
+	right: 0;
+}
+body{
+	transition: .3s all;
+}
+body.dark{
+	background: #222;
+	color: #fff;
+}
+body.dark nav ul li a{
+	color: #fff;
+}
+body.dark .container-all{
+	color: #000;
+}
+body.dark h2{
+	color: #fff;
+}
+body.dark .content-carrousel figure{
+	box-shadow: 0px 0px 20px 0px gold;
+	transition: all 300ms;
+}
+body.dark .content-carrousel figure:hover{
+	box-shadow: 0px 0px 0px 0px gold;
+	transition: all 300ms;
+}
+body.dark .menu nav ul li a{
+	color: #B8860B;
+}
+body.dark .menu nav ul li a:hover{
+	color: rgb(255, 255, 0);
+	opacity: 0.6;
+}
+body.dark .card .front{
+	  box-shadow: 0 5px 10px gold;
+}
+body.dark .Galeria h1::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	background-color: gold;
+	top: 50%;
+	z-index: -1;
+}
+body.dark .Galeria h1 span{
+	background-color: gold;
+	padding: 0 15px; 
+	text-align: justify;
+}
+body.dark .container{
+	color: #000;
+}
+body.dark .text__information-cover h1{
+	color: #fff;
+}

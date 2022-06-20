@@ -1,0 +1,57 @@
+.container{ 
+    width: 90%;
+    max-width: 1000px;
+    background:#fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius:3%;
+}
+section article ul{
+    list-style: none;
+    width: 100%;
+}
+section article ul li{
+    text-align: left;
+    width: 100%;
+    float: left;
+    border-bottom:dotted 1px #5e5c5c;
+}
+section article h2{
+    padding-bottom: 20px;
+}
+aside{
+    width: 35%;
+    float: right;
+    margin-left: 20px;
+    margin-top:20px;
+}
+aside article{
+    width: 90%;
+    margin-bottom: 50px;
+    border-bottom:dotted 1px #5e5c5c;
+    padding-bottom: 20px;
+}
+aside article img{
+    width: 250px;
+}
+section h1{
+    padding:20px;
+    font-size:1.5em;
+    margin-bottom:1.5em; 
+}
+section article{
+    width: 60%;
+    text-align: justify;
+    margin: 10px;
+    border-bottom:dotted 1px #5e5c5c;
+    padding-bottom: 20px;
+}
+section strong{
+    text-decoration: underline; 
+}
+@media screen and (max-width:700px ){
+    img{
+        max-width: 100%;
+    }
+}
